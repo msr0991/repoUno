@@ -1,0 +1,553 @@
+h1 {
+    color:rgb(1, 117, 1);
+    font-family:'Hammersmith One', sans-serif;
+    font-size: 39px;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+
+#textoLargo {
+    color:rgb(0, 0, 0);
+    font-family: 'Hammersmith One', sans-serif;
+    width: 50%;
+    height: 50%;
+}
+
+#ubicacion {
+    color:rgb(255, 255, 255);
+    background-color: black;
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    grid-area: footer;
+}
+
+ol{
+    color:rgb(1, 117, 1);
+    font-family: 'Hammersmith One', sans-serif;
+    font-weight: bold;
+    list-style-type: upper-roman;
+}
+
+header{
+    font-family: 'Hammersmith One' ,sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: greenyellow;  
+}
+
+#imagenPrincipal {
+    width: 100%;
+    height: 100%;
+    grid-area: imagen;
+}
+
+.divUno{
+    display: flex;
+    margin: 0;
+}
+
+tr {
+    background-color: rgb(245, 214, 158);
+}
+
+.contactoEstilo {
+    font-family: 'Hammersmith One' , sans-serif;
+    color:rgb(1, 117, 1);
+    display: inline-table;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+li a:hover{
+    background-color:rgb(214, 255, 176);
+    font-size: 25px;
+    height: 130px;
+    width: 85px;
+}
+
+body{
+    margin:0;
+    background-color: rgb(255, 255, 255);
+}
+
+.sobreNos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    
+}
+
+#mapaHaras{
+    width: 50vw;
+    height: 40vw;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.logoWhatsapp{
+    float: right;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    right: 7px;
+    bottom: 7px;
+}
+
+div img{
+    width: 100%;
+    height: 100%;
+}
+
+p{  
+    font-size: 100%;
+    width: 60%;
+    font-family: 'Hammersmith One' ,sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header img{
+    grid-area: logo;
+    animation-name: logo;
+    width: 100%;
+    height: 100%;
+}
+
+#pInicial{
+    grid-area: texGoo;
+    font-size: 19px;
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+
+#formularioLala{
+    display: flex;
+    font-size: 25px;
+    margin-top: 3px;
+    margin-left:3px;
+}
+
+#mapaGoogle{
+    width: 100%;
+    height: 100%;
+    grid-area: mapGoo;
+}
+
+#grillaIndex{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 90% 2% 0%;
+    grid-template-areas:
+                        "header"
+                        "seccion"
+                        "footer"
+                        "aside";
+}
+
+#seccionIndex{
+    display: grid;
+    grid-area: seccion;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 100%;
+    grid-template-areas:
+                        "imagen"
+                        "pie";
+}
+
+#pieSeccion{
+    display: grid;
+    grid-area: pie;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 45% 30%;
+    grid-template-areas:
+                        "mapGoo texGoo logoL";
+}
+
+#logoLargo{
+    grid-area: logoL;
+}
+/*
+#grillaSecGal{
+    display: grid;
+    grid-template-rows: 7% 91% 2%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+                        "header"
+                        "contenido"
+                        "footer";
+}
+*/
+.headerG{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+                        "logo nav";
+    justify-content:space-around;
+    align-items: center;
+    background: rgb(36,0,0);
+    background: linear-gradient(0deg,
+     rgba(36,0,0,1) 0%,
+      rgba(1,6,0,1) 0%,
+       rgba(13,8,103,1) 0%,
+        rgba(9,9,121,1) 0%,
+         rgba(255,255,255,1) 0%,
+          rgba(33,97,0,1) 100%);
+}
+
+.seccionA{
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+#grillaNav{
+    justify-items: center   ;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
+#galeriaGrilla{
+    grid-area: contenido;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns:20% 60% 20%;
+    grid-template-areas: 
+                         ". carousel ."
+}
+.carousel{
+    grid-area: carousel;
+} 
+/*
+#fotoUnoG{
+    grid-area: foto1;
+}
+
+#fotoDosG{
+    grid-area: foto2;
+}
+
+#fotoTresG{
+    grid-area: foto3;
+}
+
+#fotoCuatroG{
+    grid-area: foto4;
+}
+
+#fotoCincoG{
+    grid-area: foto5; 
+}
+
+#fotoSeisG{
+    grid-area: foto6;  
+}
+
+#fotoSieteG{
+    grid-area: foto7;
+}
+
+#fotoOchoG{
+    grid-area: foto8;
+}
+
+#fotoNueveG{
+    grid-area: foto9;
+}
+*/
+
+body { text-align: center; padding: 10px; 
+  
+}
+.container { width: 90%; text-align: center; margin: auto;}
+background: #121212;
+
+p{
+  font-family: 'Rock Salt', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.pad50{
+  padding-top: 50px;
+}
+
+.button {
+
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 30px;
+  padding-left: 70px;
+  position: relative;
+  background-color:rgb(0,0,0);
+  color:rgb(255,255,255);
+  text-decoration: none;
+  text-transform: none
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  text-shadow:1px 1px 0px rgba(0,0,0,0.5);
+}
+
+.button:hover{
+  text-decoration: none;
+  color: #fff;
+  text-shadow: none;
+}
+
+.button p{font-size: 18px;}
+.button span {
+  position: absolute;
+  left: 0;
+  width: 50px;
+  font-size:30px;
+  -webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+border-right: 1px solid  rgba(0,0,0,0.15);
+    text-decoration: none;
+}
+
+.button.facebook {
+ background: #3b5998;
+}
+
+.button.instagram{
+  background: #3f729b;
+}
+
+
+
+.text-center{
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px){
+    .headerG{
+        font-size: 15px;
+    }
+
+    #imagenPrincipal{
+        width: 100%;
+        height: 100%;
+    }
+
+    #seccionIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 80% 20%;
+        justify-items: center;
+    }
+
+    #mapaGoogle{
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+
+    #pInicial{
+        margin:0;
+        font-size: 12px;
+    }
+
+    .seccionA{
+        margin:0;
+        background: rgb(255, 255, 255);
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+    #grillaIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 48% 2%;
+    }
+
+    .headerG{
+        font-size: 19px;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+        grid-template-areas:
+                            "logo"
+                            "nav";
+    }
+
+    #grillaNav{
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        justify-items: center;
+
+    }
+
+    #imagenPrincipal{
+        width: 100%;
+        height: 100%;
+    }
+
+    #seccionIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #pieSeccion{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        margin:0
+    }
+
+    #mapaGoogle{
+        margin-top: 25px;
+        width: 100%;
+        height: 60%;
+    }
+
+    #pInicial{
+        margin-top:25px
+    }
+    
+    #ubicacion{
+        font-size: 14px;
+    }
+
+    .seccionA{
+        margin:0;
+        background: rgb(255, 255, 255);
+        font-size: 10px;
+    }
+
+    #textoLargo{
+        background: rgb(226, 224, 224);
+        margin: 0;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+
+    iframe{
+        height: 50%;
+        width: 100%;
+    }
+
+    .divUno{
+        display: block;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px){   
+    #grillaIndex{
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 70% 5% 5%;
+    }
+
+    .headerG{
+        font-size: 12px;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 70%;
+        grid-template-areas:
+                            "logo"
+                            "nav";
+    }
+
+    header img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #grillaNav{
+        background-color: rgb(106, 170, 3);
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        justify-items: center;
+    }
+
+    #imagenPrincipal{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #pInicial{
+        width: 100%;
+        height: 100%;
+        font-size: 11px;
+    }
+
+    #seccionIndex{
+        font-size: 10px;
+        text-align: justify;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #pieSeccion{
+        margin:0
+    }
+
+    #mapaGoogle{
+        margin-top: 25px;
+        width: 100%;
+        height: 100px;
+    }
+
+    #ubicacion{
+        font-size: 10px;
+        background-color: rgb(0, 0, 0);
+        color: blanchedalmond;
+    }
+
+    .seccionA{
+        margin:0;
+        background: rgb(255, 255, 255);
+        font-size: 10px;
+    }
+
+    #textoLargo{
+        background: rgb(226, 224, 224);
+        margin: 0;
+    }
+
+    h1{
+        font-size: 15px;
+    }
+
+    iframe{
+        height: 50%;
+        width: 100%;
+    }
+
+    .divUno{
+        display: block;
+        text-align: center;
+    }
+
+}
